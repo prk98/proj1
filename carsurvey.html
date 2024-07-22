@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>car survey</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="style.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+        </head>
+        <body>
+            <div class="bg">
+        <h1>Favourite car survey form</h1>
+        <p>Thank you for taking time to help us know your preferences</p>
+        <form>
+            <fieldset>
+                <label for="first-name">
+                    Enter your first name: <input type="text" required minlength="1">
+                </label>
+                <label> Enter your last name: <input type="text" required minlength="1"> </label>
+                <label> Age: <input type="number" required min="12" max="110"> </label>
+                <label>Choose your favourite car company: <select>
+                    <option>select one</option>
+                    <option>BMW</option>
+                    <option>Lamborgini</option>
+                    <option>Audi</option>
+                    <option>Mercedes</option>
+                    <option>Porsche</option>
+                </select></label>
+            </fieldset>
+                <fieldset>
+                  <label>Did you find your desired car company here?</label>
+                    <label for="yes"> <input id="yes" type="radio" name="account-type" class="inline" checked>Yes </label>
+                     <label for="no"> <input id="no" type="radio" name="account-type" class="inline" >No </label>
+                     <label for="third"> <input id="third" type="radio" name="account-type" class="inline">I am interested in bikes </label>
+                         </fieldset>
+
+                            <fieldset>
+                               <label>Attatch your favourite car picture: <input type="file"></label>   
+                               <label>feedback: <textarea rows="3" cols="30" placeholder="nothing beats a lamborgini"> </textarea></label>
+            </fieldset>
+            <input type="submit" value="Submit" />
+            </form>
+            </div>
+        </body>        
+    </html>
